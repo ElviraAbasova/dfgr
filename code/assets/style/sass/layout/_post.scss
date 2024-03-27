@@ -1,11 +1,15 @@
 #post{
-    margin: 5rem 0;
+    padding: 5rem 0 5rem 0;
+    border-bottom: 3.5px dotted rgb(218, 218, 218);
     .container{
         position: relative;
         display: flex;
         flex-direction: column;
         gap: 4rem;
         .title{
+            display: flex;
+            flex-direction: column;
+            gap:0.6rem;
             h2{
                 font-size: 3rem;
             }
@@ -16,17 +20,21 @@
             }
         }
         .posts{
+            
             display: flex;
             justify-content: space-between;
             align-items: center;
             .post{
+                position: relative;
                 max-width: 31rem;
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
+              
                 .about{
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     h3{
                         font-size: 2rem;
                     }
@@ -39,36 +47,54 @@
                     font-size: 0.9rem;
                 }
                 .transform{
-                    
-                    display: none;
+                    position: absolute;
+                    bottom: 6rem ;
+                    left: 20%;
+                    display: flex;
                     justify-content: center;
                     gap: 1rem;
+                    transition: all;
+                    transition-duration: 1s;
+                    transition-timing-function: ease-in-out;
+                    visibility: hidden;
                     .icon{
                         background-color: white;
-                        padding: 1rem;
+                        padding: 1.3rem;
+                       
+                        i{
+                            font-size: 1.6rem;
+                        }
+                        
                     }
+                    
+                    
                 }
+               
                 
-                .post:hover{
-                    .transform{
-                        display: flex;
-                    }
-                   
-
-                }
+                
+                
+               
                 
             }
+            .post:hover .transform{
+                visibility: visible;
+                bottom:15rem
+
+            }
+            
+          
+            
             
         }
      .arrow{
-        padding: 1rem;
+        padding: 1.5rem;
         border: 1px solid grey;
         position: absolute;
         top: 50%;
         left: -5%;
      }
      .arrowa{
-        padding: 1rem;
+        padding: 1.5rem;
         border: 1px solid grey;
         position: absolute;
         top: 50%;

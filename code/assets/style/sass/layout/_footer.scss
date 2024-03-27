@@ -1,0 +1,60 @@
+footer{
+    padding: 6rem 0;
+    background-color: #2a2a2a;
+    .container{
+        display: flex;
+        flex-direction: column;
+        .top{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            .row{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                
+                h3{
+                    color: white;
+                    font-size: 2rem;
+                }
+                
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    li{
+                        list-style-type: none;
+                        a{
+                            color: white;
+                            font-size: 1.4rem;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+        hr{
+            margin: 3rem 0;
+            border-color: rgba(133, 132, 132, 0.705);
+        }
+        .bottom{
+            font-size: 1.3rem;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            a{
+                color: rgb(149, 194, 194);
+            }
+            .icons{
+                margin-top: 2rem;
+                display: flex;
+                gap: 1.3rem;
+                font-size: 2rem;
+                color: rgb(123, 196, 196);
+            }
+        }
+    }
+}
