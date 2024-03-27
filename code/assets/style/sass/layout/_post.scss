@@ -1,0 +1,80 @@
+#post{
+    margin: 5rem 0;
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        .title{
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.6rem;
+                color: #aaa;
+                font-style: italic;
+            }
+        }
+        .posts{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .post{
+                max-width: 31rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .about{
+                    display: flex;
+                    justify-content: space-between;
+                    h3{
+                        font-size: 2rem;
+                    }
+                }
+                h4{
+                    font-size: 2rem;
+                    color: #aaa;
+                }
+                i{
+                    font-size: 0.9rem;
+                }
+                .transform{
+                    
+                    display: none;
+                    justify-content: center;
+                    gap: 1rem;
+                    .icon{
+                        background-color: white;
+                        padding: 1rem;
+                    }
+                }
+                
+                .post:hover{
+                    .transform{
+                        display: flex;
+                    }
+                   
+
+                }
+                
+            }
+            
+        }
+     .arrow{
+        padding: 1rem;
+        border: 1px solid grey;
+        position: absolute;
+        top: 50%;
+        left: -5%;
+     }
+     .arrowa{
+        padding: 1rem;
+        border: 1px solid grey;
+        position: absolute;
+        top: 50%;
+        right: -5%;
+
+     }
+
+    }
+}

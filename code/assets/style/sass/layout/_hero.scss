@@ -1,0 +1,87 @@
+#hero{
+    height: 90rem;
+    width: 100%;
+    display: grid;
+    padding: 5rem 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    border-bottom: 3.5px dotted rgb(218, 218, 218);
+    .mainImg{
+        grid-area: 1 / 1/ span 2 / span 2;
+        background-image: url(../../images/left-banner-image.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .content{
+            align-items: flex-start;
+        }
+       
+    }
+    .rightImg1{
+        grid-area: 1 / 3 / span 1 / span 1 ;
+        background-image: url(../../images/baner-right-image-01.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .rightImg2 {
+
+        grid-area: 1 / 4 / span 1 / span 1 ;
+        background-image: url(../../images/baner-right-image-02.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightImg3 {
+
+        grid-area: 2 / 3 / span 1 / span 1 ;
+        background-image: url(../../images/baner-right-image-03.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightImg4{
+
+        grid-area: 2 / 4 / span 1 / span 1 ;
+        background-image: url(../../images/baner-right-image-04.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+        h2{
+            color: white;
+            font-size: 4rem;
+            
+        }
+        p{
+            color: white;
+            font-size: 2rem;
+            font-style: italic;
+        }
+        button{
+            width: 50%;
+            color: white;
+            font-size: 1.6rem;
+            padding: 1rem 2rem;
+            border-radius: 3px;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+
+    }
+    
+
+ 
+    
+}
