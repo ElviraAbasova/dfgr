@@ -44,6 +44,9 @@ nav .container ul li i {
   font-size: 0.8rem;
   color: #aaa;
 }
+nav .container ul li a:hover {
+  color: #aaa;
+}
 
 #hero {
   height: 90rem;
@@ -135,7 +138,8 @@ nav .container ul li i {
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  transition: all 0.5ms linear;
+  opacity: 0;
+  transition: all 0.5s ease;
   visibility: hidden;
 }
 #hero .abselute h2 {
@@ -155,6 +159,7 @@ nav .container ul li i {
   border: 1px solid white;
 }
 #hero .img:hover .abselute {
+  opacity: 1;
   visibility: visible;
 }
 #hero button:hover {
@@ -219,6 +224,7 @@ nav .container ul li i {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  opacity: 0;
   transition: all;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
@@ -232,6 +238,7 @@ nav .container ul li i {
   font-size: 1.6rem;
 }
 #post .container .posts .post:hover .transform {
+  opacity: 1;
   visibility: visible;
   bottom: 15rem;
 }
@@ -354,6 +361,9 @@ footer .container .top .row ul li a {
   font-size: 1.4rem;
   line-height: 1.5;
 }
+footer .container .top .row ul li a:hover {
+  color: #aaa;
+}
 footer .container hr {
   margin: 3rem 0;
   border-color: rgba(133, 132, 132, 0.705);
@@ -369,6 +379,9 @@ footer .container .bottom {
 }
 footer .container .bottom a {
   color: rgb(149, 194, 194);
+}
+footer .container .bottom a:hover {
+  color: #aaa;
 }
 footer .container .bottom .icons {
   margin-top: 2rem;
