@@ -39,6 +39,11 @@
                 width: 20rem;
                 border: 1ps solid black;
             }
+            button:hover{
+                background-color: black;
+                color: white;
+                border: none;
+            }
         }
         .rightSide{
             display: grid;
